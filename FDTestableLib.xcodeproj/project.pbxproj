@@ -16,6 +16,7 @@
 		1DA3AE0926C46E9400A6EC56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DA3AE0726C46E9400A6EC56 /* Main.storyboard */; };
 		1DA3AE0B26C46E9A00A6EC56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DA3AE0A26C46E9A00A6EC56 /* Assets.xcassets */; };
 		1DA3AE0E26C46E9A00A6EC56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DA3AE0C26C46E9A00A6EC56 /* LaunchScreen.storyboard */; };
+		1DA3AE1426C475F800A6EC56 /* TestableAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3AE1326C475F800A6EC56 /* TestableAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		1DA3AE0A26C46E9A00A6EC56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DA3AE0D26C46E9A00A6EC56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1DA3AE0F26C46E9A00A6EC56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DA3AE1326C475F800A6EC56 /* TestableAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestableAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				1DA3ADE426C46E3B00A6EC56 /* FDTestableLib.h */,
 				1DA3ADE526C46E3B00A6EC56 /* Info.plist */,
+				1DA3AE1326C475F800A6EC56 /* TestableAPI.swift */,
 			);
 			path = FDTestableLib;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				TargetAttributes = {
 					1DA3ADE026C46E3B00A6EC56 = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 					1DA3ADE926C46E3C00A6EC56 = {
 						CreatedOnToolsVersion = 11.6;
@@ -263,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DA3AE1426C475F800A6EC56 /* TestableAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +377,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -428,6 +434,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -437,6 +444,7 @@
 		1DA3ADF626C46E3C00A6EC56 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = M3754J9UWF;
@@ -453,6 +461,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mycatwalk.FDTestableLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,6 +471,7 @@
 		1DA3ADF726C46E3C00A6EC56 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = M3754J9UWF;
@@ -477,6 +488,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mycatwalk.FDTestableLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -485,6 +497,7 @@
 		1DA3ADF926C46E3C00A6EC56 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3754J9UWF;
 				INFOPLIST_FILE = FDTestableLibTests/Info.plist;
@@ -503,6 +516,7 @@
 		1DA3ADFA26C46E3C00A6EC56 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3754J9UWF;
 				INFOPLIST_FILE = FDTestableLibTests/Info.plist;
