@@ -29,7 +29,5 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/fernnando/FDTestingLib.git", :tag => "#{spec.version}" }
   spec.source_files  = "FDTestableLib/**/*.{h,m,swift}"
-  spec.resource_bundles = {
-     'FDTestableLib' => ['$FDTestableLib/Resources/*.png']
-  }
+  spec.resources = "FDTestableLib/Resources/*.png"
 end
