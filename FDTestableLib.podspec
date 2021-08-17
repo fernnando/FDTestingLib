@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "FDTestableLib"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "Testing library creation."
 
   spec.description  = <<-DESC
@@ -29,4 +29,7 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/fernnando/FDTestingLib.git", :tag => "#{spec.version}" }
   spec.source_files  = "FDTestableLib/**/*.{h,m,swift}"
+  spec.resource_bundles = {
+     'FDTestableLib' => ['$FDTestableLib/Resources/*.png']
+  }
 end
